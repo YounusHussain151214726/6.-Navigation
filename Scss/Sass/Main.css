@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 100vw;
+  min-height: 20vh;
+}
+nav .container {
+  display: inline-block;
+  cursor: pointer;
+  float: right;
+  padding-right: 5rem;
+}
+nav .bar1,
+nav .bar2,
+nav .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+nav .change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+nav .change .bar2 {
+  opacity: 0;
+}
+nav .change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+nav .come {
+  transition: all 0.4s ease-in-out;
+  transform: translateX(0);
+}
+nav .out {
+  transition: all 0.4s ease-in-out;
+  transform: translateX(-100vw);
+}
+nav ul {
+  height: 100vh;
+  width: 100vw;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(-100vw);
+}
+nav ul li {
+  border: 2px solid green;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  padding: 5rem;
+}
+nav ul li a {
+  position: relative;
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: block;
+  text-align: center;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+}
+nav ul li a::before {
+  content: " ";
+  background-color: black;
+  position: absolute;
+  width: 25vw;
+  top: 47.5%;
+  left: 0;
+  height: 3px;
+  opacity: 0;
+}
+nav ul li a:hover {
+  transform: scale(1.2);
+}
+nav ul li a:hover::before {
+  opacity: 1;
+}
+nav ul li:nth-of-type(1) {
+  background-color: green;
+}
+nav ul li:nth-of-type(2) {
+  background-color: rgb(5, 109, 5);
+}
+nav ul li:nth-of-type(3) {
+  background-color: rgb(4, 94, 4);
+}
+nav ul li:nth-of-type(4) {
+  background-color: rgb(42, 161, 42);
+}
+nav ul li:nth-of-type(5) {
+  background-color: rgb(93, 150, 93);
+}
+
+main #home {
+  width: 100vw;
+  height: 100vh;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #home {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(35, 35, 92);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #skill {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(133, 133, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #about {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(199, 199, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #contact {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(77, 184, 111);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #address {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(123, 123, 211);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=Main.css.map */

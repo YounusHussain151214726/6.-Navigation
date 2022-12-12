@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 100vw;
+  min-height: 20vh;
+
+  //menu Icon
+
+  .container {
+    display: inline-block;
+    cursor: pointer;
+    float: right;
+    padding-right: 5rem;
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+
+  .change .bar2 {
+    opacity: 0;
+  }
+
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+  .come {
+    transition: all 0.4s ease-in-out;
+    transform: translateX(0);
+  }
+
+  .out {
+    transition: all 0.4s ease-in-out;
+    transform: translateX(-100vw);
+  }
+
+  ul {
+    height: 100vh;
+    width: 100vw;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-100vw);
+
+    li {
+      border: 2px solid green;
+      height: 100vh;
+      width: 100vw;
+      text-align: center;
+      padding: 5rem;
+      a {
+        position: relative;
+        text-decoration: none;
+        font-size: 1.5rem;
+        display: block;
+        text-align: center;
+        letter-spacing: 0.5rem;
+        text-transform: uppercase;
+        &::before {
+          content: " ";
+          background-color: black;
+          position: absolute;
+          width: 25vw;
+          top: 47.5%;
+          left: 0;
+          height: 3px;
+          opacity: 0;
+        }
+        &:hover {
+          transform: scale(1.2);
+        }
+
+        &:hover::before {
+          opacity: 1;
+        }
+      }
+      &:nth-of-type(1) {
+        background-color: green;
+      }
+
+      &:nth-of-type(2) {
+        background-color: rgb(5, 109, 5);
+      }
+
+      &:nth-of-type(3) {
+        background-color: rgb(4, 94, 4);
+      }
+
+      &:nth-of-type(4) {
+        background-color: rgb(42, 161, 42);
+      }
+
+      &:nth-of-type(5) {
+        background-color: rgb(93, 150, 93);
+      }
+    }
+  }
+}
+
+main {
+  #home {
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #home {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(35, 35, 92);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #skill {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(133, 133, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #about {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(199, 199, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #contact {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(77, 184, 111);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #address {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(123, 123, 211);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+// .slide-in1{
+// animation: slide-in 0.4s linear 0.25 both
+// }
+// .slide-in2{
+//     animation: slide-in 0.6s linear 0.25 both
+// }
+// .slide-in3{
+//     animation: slide-in 0.8s linear 0.25 both
+// }
+// .slide-in4{
+//     animation: slide-in 0.10s linear 0.25 both
+// }
+// .slide-in5{
+//     animation: slide-in 0.12s linear 0.25 both
+// }
+
+// //slide out
+
+// .slide-out1{
+//     animation: slide-out 0.4s linear 0.25 both
+//     }
+//     .slide-out2{
+//         animation: slide-out 0.6s linear 0.25 both
+//     }
+//     .slide-out3{
+//         animation: slide-out 0.8s linear 0.25 both
+//     }
+//     .slide-out4{
+//         animation: slide-out 0.10s linear 0.25 both
+//     }
+//     .slide-out5{
+//         animation: slide-out 0.12s linear 0.25 both
+//     }
+
+// @keyframes slide-in {
+//     from{
+// transform: translateX(-100vw);
+//     }
+
+//     to{
+//         transform: translateX(100%);
+//     }
+// }
+
+// @keyframes slide-out {
+//     from{
+// transform: translateX(0);
+//     }
+
+//     to{
+//         transform: translateX(-100%);
+//     }
+// }
